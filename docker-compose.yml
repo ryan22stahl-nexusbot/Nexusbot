@@ -1,0 +1,11 @@
+version: "3.8"
+services:
+  questdb:
+    image: questdb/questdb:latest
+    ports:
+      - "9000:9000"   # REST / ILP
+      - "8812:8812"   # Postgres wire
+    volumes:
+      - questdb_data:/root/.questdb
+volumes:
+  questdb_data:

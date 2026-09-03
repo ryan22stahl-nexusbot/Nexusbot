@@ -1,0 +1,4 @@
+databento>=0.40
+questdb>=1.0
+pandas>=2.0
+python-dotenv>=1.0
